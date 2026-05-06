@@ -9,5 +9,13 @@ Distancia	  | Con SUBE registrada   | Con SUBE sin registrar
 */
 
 boton.addEventListener("click", () => {
-  // COMPLETAR
-});
+  let Registrada =  registrada.value;
+  let Km = distancia.value;
+  let costo = Tarifa.innerText;
+  if(costo === 'si' &&  Km <= 3){ costo === $715,24 ;
+
+
+  }
+  });
+
+
