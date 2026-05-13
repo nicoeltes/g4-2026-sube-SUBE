@@ -12,6 +12,7 @@ boton.addEventListener("click", () => {
   let reg =  registrada.value;
   let km = distancia.value;
   let costo;
+
   if(reg === 'si' &&  km <= 3){ costo = "$715.24" ;}
   
   if (reg === 'si' && km >= 3 && km <= 6){costo = "$794.74";}
