@@ -9,13 +9,29 @@ Distancia	  | Con SUBE registrada   | Con SUBE sin registrar
 */
 
 boton.addEventListener("click", () => {
-  let Registrada =  registrada.value;
-  let Km = distancia.value;
-  let costo = Tarifa.innerText;
-  if(costo === 'si' &&  Km <= 3){ costo === $715,24 ;
+  let reg =  registrada.value;
+  let km = distancia.value;
+  let costo;
+  if(reg === 'si' &&  km <= 3){ costo = "$715.24" ;}
+  
+  if (reg === 'si' && km >= 3 && km <= 6){costo = "$794.74";}
+
+  if (reg === 'si' && km  >= 6 && km <= 12){costo = "$855.97";}
+
+  if (reg === 'si' && km  >= 12 && km <= 27){costo = "$917.24";}
+
+  else if (reg === 'no' &&  km <= 3){ costo = "1137.23";}
+
+  else if (reg === 'no' && km >= 3 && km <= 6){costo = "$1263.64";}
+
+  else if (reg === 'no' && km  >= 6 && km <= 12){costo = "1360.99";}
+
+  else if (reg === 'no' && km  >= 12 && km <= 27){costo = "1458.41";}
+
+  tarifa.innerText = costo;
 
 
-  }
-  });
+
+});
 
 
